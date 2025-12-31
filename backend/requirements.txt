@@ -1,6 +1,11 @@
+# Torch CPU (Critical for Render Free Tier to save RAM/Slug size)
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
+
 ultralytics
 fastapi
 uvicorn
+gunicorn
 python-multipart
 opencv-python-headless
 numpy
