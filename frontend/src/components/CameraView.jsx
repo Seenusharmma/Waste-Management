@@ -36,7 +36,8 @@ const CameraView = () => {
         formData.append("file", input);
       }
 
-      const res = await axios.post("http://localhost:8000/predict", formData);
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const res = await axios.post(`${API_URL}/predict`, formData);
       setDetections(res.data?.detections || []);
     } catch (err) {
       console.error(err);
