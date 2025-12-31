@@ -36,7 +36,7 @@ const CameraView = () => {
         formData.append("file", input);
       }
 
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const API_URL = import.meta.env.VITE_API_URL || "https://waste-management-wd4z.onrender.com"
       const res = await axios.post(`${API_URL}/predict`, formData);
       setDetections(res.data?.detections || []);
     } catch (err) {

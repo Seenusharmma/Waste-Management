@@ -1,6 +1,6 @@
-# Torch CPU (Critical for Render Free Tier to save RAM/Slug size)
-torch --index-url https://download.pytorch.org/whl/cpu
-torchvision --index-url https://download.pytorch.org/whl/cpu
+https://download.pytorch.org/whl/cpu/torch-2.0.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.15.1%2Bcpu-cp310-cp310-linux_x86_64.whl
+
 
 ultralytics
 fastapi
